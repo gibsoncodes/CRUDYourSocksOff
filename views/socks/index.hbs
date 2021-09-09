@@ -1,0 +1,44 @@
+<header>
+      <h2 class="title">CRUD YOUR SOCKS OFF</h2>
+</header>
+
+<div class="sideBar">
+    <button class="newSock btn-small">
+        New Sock
+    </button>
+    <button class="cancel btn-small hidden">
+        Cancel
+    </button>
+    <button class="continue btn-small hidden">
+        Create
+    </button>
+    <div class="sideSock">
+        <i id="more-horz" class="material-icons">expand_less</i>
+        <i id="less-horz" class="material-icons">expand_more</i>
+        <i id="more-vert" class="material-icons">expand_less</i>
+        <i id="less-vert" class="material-icons">expand_more</i>
+        <div class="sideSockTop"></div>
+        <div class="sideSockBody">
+            <div></div>
+        </div>
+        <div class="sideSockStripe"></div>
+        <div class="sideSockBottom"></div>
+    </div>
+</div>
+
+<div class="cover"></div>
+
+<div class="sockContainer">
+    {{#each socks}}
+    <div class="sock" id="{{this.id}}">
+        <div class="sockTop" style="background-color: {{this.sockColors.[0]}};"></div>
+        <div class="sockBody" style="grid-template-rows: {{this.gridRows}}; grid-template-columns: {{this.gridCols}};">
+            {{#each this.stripeColors}}
+            <div class="inner" style="background-color:{{this}};"></div>
+            {{/each}}
+        </div>
+        <div class="sockStripe" style="background-color: {{this.sockColors.[1]}};"></div>
+        <div class="sockBottom" style="background-color: {{this.sockColors.[2]}};"></div>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "CRUDYourSocksOff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "hbs": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backEnd/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

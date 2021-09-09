@@ -1,0 +1,23 @@
+<header class="stile">
+      <h2 class="title">CRUD YOUR SOCKS OFF</h2>
+      <div class="refresh" onclick="location.reload()"></div>
+      <h6 class="delete hvr" >Delete</h6>
+      <h6 class="edit hvr">Edit</h6>
+      <h6 class="back hvr" onclick="location.replace('/socks')">Back</h6>
+      <h6 class="hidden hvr smalltext">Click Your Sock</h6>
+</header>
+
+<div class="showContainer">
+    <div class="showSock" id="{{sock.id}}">
+        <div style="background-color: {{sock.sockColors.[0]}};" class="showSockTop"></div>
+        <div class="showSockBody" style="grid-template-rows: {{sock.gridRows}}; grid-template-columns: {{sock.gridCols}};">
+        {{#each sock.stripeColors}}
+            <div class="inner" style="background-color:{{this}};"></div>
+        {{/each}}
+    </div>
+    <div class="showSockStripe" style="background-color: {{sock.sockColors.[1]}};"></div>
+    <div class="showSockBottom" style="background-color: {{sock.sockColors.[2]}};"></div>
+    </div>
+</div>
+<div class="containerx">
+</div>
