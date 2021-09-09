@@ -32,7 +32,6 @@ header {
     height: 50px;
     border-right: solid black 8px;
     z-index: 1;
-    border-top: solid rgb(255, 241, 221) 10px;
 }
 
 .sockContainer {
@@ -118,7 +117,6 @@ img {
     width: 230px;
     height: 15px;
     border: solid black 3px;
-    border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
 
@@ -142,7 +140,6 @@ img {
     height: 50px;
     width: 10px;
     background-color: rgb(57, 57, 57);
-    border-top: solid rgb(255, 241, 221) 10px;
     z-index: 2;
 }
 
@@ -150,11 +147,9 @@ img {
     position: fixed;
     top: 0%;
     right: 0%;
-    width: 27%;
+    width: 390px;
     height: 100%;
-    background-color: rgba(150, 151, 152, 0.55);
-    border-top: solid rgb(255, 241, 221) 10px;
-    
+    background-color: rgba(150, 151, 152, 0.55);  
 }
 
 .sideSock {
