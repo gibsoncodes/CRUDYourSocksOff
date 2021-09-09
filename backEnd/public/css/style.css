@@ -42,7 +42,7 @@ header {
     padding-bottom: 70px;
     padding-top: 60px;
     padding-left: 40px;
-    width: 73%;
+    max-width: 73%;
     background-color: rgba(242, 239, 234, 0.605);
     font-size: 0;
     border-right: solid black 8px;
@@ -219,7 +219,7 @@ img {
 
 .newSock {
     width: 100%;
-    height: 40px;
+    height: 50px;
     margin: 0;
     border: none;
     border-radius: 0px;
@@ -230,7 +230,7 @@ img {
 }
 .cancel {
     width: 50%;
-    height: 40px;
+    height: 50px;
     margin: 0;
     border: none;
     border-radius: 0px;
@@ -242,7 +242,7 @@ img {
 .continue {
     float: right;
     width: 50%;
-    height: 40px;
+    height: 50px;
     margin: 0;
     border: none;
     border-radius: 0px;
