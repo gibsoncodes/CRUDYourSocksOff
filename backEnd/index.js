@@ -11,14 +11,6 @@ app.use(express.urlencoded({extended:true}))
 app.use(sockController)
 app.set("port", process.env.PORT || 4000)
 
-const Sock = require('./models/sock')
-Sock.deleteMany({})
-.then( () => {
-    console.log("hi")
-})
-.then(console.log)
-.catch(console.error)
-
 app.get('/', (req,res) => {
     res.redirect('/socks')
 })

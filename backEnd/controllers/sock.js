@@ -10,7 +10,6 @@ router.get('/socks/', (req, res) => {
         .catch(err => console.log(err))
 })
 router.post('/socks/', (req, res) => {
-    console.log(req.body)
     Sock.create(req.body)
         .then(() => {
             res.redirect('/socks')
@@ -33,7 +32,6 @@ router.get('/socks/:id', (req, res) => {
 })
 
 router.put('/socks/:id', (req, res) => {
-    console.log(req.body)
     const id = req.body.id
     Sock.findByIdAndUpdate(
         {_id: id},
@@ -46,14 +44,12 @@ router.put('/socks/:id', (req, res) => {
         {new: true}
     )
     .then(sock => {
-        console.log(sock)
         res.send("success");
     })
     .catch(err => {console.log(err)});
 })
 
 router.delete('/socks/:id', (req, res) => {
-    console.log("nerd")
     Sock.findByIdAndDelete(req.params.id)
         .then(() => {
             res.send("solid")
