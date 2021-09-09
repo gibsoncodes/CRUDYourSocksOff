@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "hbs": "^4.1.2"
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.5"
   },
   "devDependencies": {},
   "scripts": {
