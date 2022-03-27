@@ -76,7 +76,7 @@ p {
     padding: 0px 70px 0px 60px;
 }
 .sock {
-    width: 300px;
+    width: 100%;
     height: 100%;
     margin: 0;
 }
@@ -85,7 +85,7 @@ p {
     top: 4%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 232px;
+    width: 69%;
     height: 50px;
     border: solid black 3px;
 }
@@ -96,8 +96,8 @@ p {
     top: 4%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 230px;
-    height: 420px;
+    width: 68%;
+    height: 70%;
     border-left: solid black 3px;
     border-right: solid black 3px;
     font-size: 0px;
@@ -114,7 +114,7 @@ img {
     bottom: -3.6%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 230px;
+    width: 68%;
     height: 15px;
     border: solid black 3px;
     border-bottom: 2px solid black;
@@ -127,7 +127,7 @@ img {
     transform: translate(-50%, 0);
     color: white;
     height: 120px;
-    width: 230px;
+    width: 68%;
     border-radius: 0px 0px 250px 250px;
     border: 3px solid black;
     border-top: none;
@@ -144,12 +144,13 @@ img {
 }
 
 .sideBar {
+    z-index: 10;
     position: fixed;
     top: 0%;
     right: 0%;
-    width: 390px;
+    width: 27%;
     height: 100%;
-    background-color: rgba(150, 151, 152, 0.55);  
+    background-color: rgb(186, 187, 187);  
 }
 
 .sideSock {
@@ -169,7 +170,7 @@ img {
     top: 4%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 244px;
+    width: 63%;
     height: 55px;
     border: solid black 3px;
     background-color: rgb(252, 249, 244);
@@ -180,8 +181,8 @@ img {
     top: 4%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 240px;
-    height: 400px;
+    width: 62%;
+    height: 58%;
     border-left: solid black 3px;
     border-right: solid black 3px;
     background-color: rgb(252, 249, 244);
@@ -191,7 +192,7 @@ img {
     bottom: -3.6%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 240px;
+    width: 62%;
     height: 13px;
     border: solid black 3px;
     border-top: 2px solid black;
@@ -206,7 +207,7 @@ img {
     transform: translate(-50%, 0);
     color: white;
     height: 140px;
-    width: 240px;
+    width: 62%;
     border: 3px solid black;
     border-top: none;
     border-radius: 0px 0px 250px 250px;
